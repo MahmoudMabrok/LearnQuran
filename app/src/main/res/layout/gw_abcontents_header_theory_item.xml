@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="az.gulf.learnquran.fragment.ABContentsHeaderTheoryFragment">
+
+    <az.gulf.learnquran.components.ArabicTextView
+        android:id="@+id/value"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:text="A"
+        android:textSize="77sp"
+        android:gravity="center"
+        android:background="@color/teal_400"
+        android:rotationY="180"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/white"
+        android:text="alif"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@color/teal_400"
+        android:rotationY="180"/>
+
+</LinearLayout>
+

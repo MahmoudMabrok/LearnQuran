@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="az.gulf.learnquran.fragment.ABContentsPractiseFragment">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/ab_cont_practice_layout_top"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="100%">
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/ab_cont_practice_layout_top_left"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="10%">
+
+
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_left_top"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/ab_cont_practice_button_circle_play"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/space_layout_top_left_top"
+                    android:src="@drawable/circle_play_button"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"/>
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_left_center"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/ab_cont_practice_button_circle_play" />
+
+                <ImageButton
+                    android:id="@+id/ab_cont_practice_button_circle_alphabet"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/space_layout_top_left_center"
+                    android:src="@drawable/circle_letter_button"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"/>
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_left_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/ab_cont_practice_button_circle_alphabet" />
+
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/ab_cont_practice_layout_top_center"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="80%"
+                android:layout_toRightOf="@id/ab_cont_practice_layout_top_left">
+
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/ab_cont_practice_app_bar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/ab_cont_practice_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/ab_cont_practice_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ab_cont_practice_app_bar_layout"/>
+
+      </android.support.percent.PercentRelativeLayout>
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/ab_cont_practice_layout_top_right"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimary"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="10%"
+                android:layout_toRightOf="@id/ab_cont_practice_layout_top_center">
+
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_right_top"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/ab_cont_practice_button_circle_play_record"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/space_layout_top_right_top"
+                    android:src="@drawable/circle_play_record_button"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"/>
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_right_center"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/ab_cont_practice_button_circle_play_record" />
+
+                <ImageButton
+                    android:id="@+id/ab_cont_practice_button_circle_record"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/space_layout_top_right_center"
+                    android:src="@drawable/circle_record_button"
+                    android:scaleType="centerCrop"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"/>
+
+                <android.support.v4.widget.Space
+                    android:id="@+id/space_layout_top_right_bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="20%"
+                    app:layout_widthPercent="100%"
+                    android:layout_below="@id/ab_cont_practice_button_circle_record" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_sub"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/ab_cont_practice_layout_top"
+            android:background="@color/colorPrimaryDark"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="100%">
+
+
+
+
+            <TextView android:id="@+id/ab_cont_practice_text_alphabet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="100%"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimary"
+                android:textColorHighlight="#000000"
+                android:textIsSelectable="true" />
+
+
+
+
+
+
+            <ImageButton android:id="@+id/ab_cont_practice_button_previous"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="30%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:src="@drawable/ic_keyboard_arrow_left_24dp"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:padding="40dp"/>
+
+            <Spinner
+                android:id="@+id/ab_cont_practice_button_spinner"
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="40%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:layout_toRightOf="@+id/ab_cont_practice_button_previous"
+                android:prompt="@string/app_name"
+                android:spinnerMode="dialog"
+                android:ellipsize="marquee"
+                android:theme="@android:style/Theme.Holo.Light"/>
+
+            <ImageButton android:id="@+id/ab_cont_practice_button_next"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="30%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:layout_toRightOf="@+id/ab_cont_practice_button_spinner"
+                android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:padding="40dp"/>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+    </android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,374 @@
+<resources>
+    <string name="app_name">Learn Quran</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="skip">Keçmək</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="alphabet">Əlifba</string>
+    <string name="tajweed">Təcvid</string>
+    <string name="default_string">Default String</string>
+
+
+    <string-array name="alphabets">
+        <item>ا</item>
+        <item>əlif</item>
+        <item>ب</item>
+        <item>bə</item>
+        <item>ت</item>
+        <item>tə</item>
+
+        <item>ث</item>
+        <item>šə</item>
+        <item>ج</item>
+        <item>ĉim</item>
+        <item>ح</item>
+        <item>[hə]</item>
+
+        <item>خ</item>
+        <item>xa</item>
+        <item>د</item>
+        <item>dəl</item>
+        <item>ذ</item>
+        <item>žəl</item>
+
+        <item>ر</item>
+        <item>ra</item>
+        <item>ز</item>
+        <item>zə</item>
+        <item>س</item>
+        <item>sin</item>
+        <item>ش</item>
+        <item>şin</item>
+        <item>ص</item>
+        <item>sad</item>
+        <item>ض</item>
+        <item>dad</item>
+        <item>ط</item>
+        <item>ta</item>
+        <item>ظ</item>
+        <item>ža</item>
+        <item>ع</item>
+        <item>[ayn]</item>
+        <item>غ</item>
+        <item>ğayn</item>
+        <item>ف</item>
+        <item>fə</item>
+        <item>ق</item>
+        <item>qaf</item>
+        <item>ك</item>
+        <item>kəf</item>
+        <item>ل</item>
+        <item>ləm</item>
+        <item>م</item>
+        <item>mim</item>
+        <item>ن</item>
+        <item>nun</item>
+        <item>ه</item>
+        <item>hə</item>
+        <item>و</item>
+        <item>vav</item>
+        <item>ي</item>
+        <item>yə</item>
+
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- ******************************** Custom settings ******************************** -->
+    <string name="pref_title_text_font">Sync frequency</string>
+    <string-array name="pref_text_fonts_titles">
+        <item>Kiçik</item>
+        <item>Normal</item>
+        <item>İri</item>
+        <item>Böyük</item>
+    </string-array>
+    <string-array name="pref_text_fonts_values">
+        <item>14</item>
+        <item>18</item>
+        <item>22</item>
+        <item>26</item>
+    </string-array>
+
+
+    <!-- ******************************** Multi language supported values ******************************** -->
+
+    <string name="name_settings">Parametrlər</string>
+    <string name="pref_title_font_size">Mətnin ölçüsünü seçin</string>
+    <string name="ab_cont_header_name">Qurani-Kərim Əlifbası</string>
+    <string name="ab_cont_writings_header_name">Hərflərin yazılışı</string>
+    <string name="theory">Nəzəriyyə</string>
+    <string name="action_add_mark">İşarə qoy</string>
+    <string name="action_go_to_added_mark">İşarə qoyduğun dərsə keç</string>
+    <string name="reset_text_appearance">Parametrləri ilkin vəziyyətə qaytar</string>
+    <string name="reset_text_appearance_ask">Parametrlər ilkin vəziyyətə qaytarılsın?</string>
+    <string name="your_result">Sənin nəticələrin</string>
+    <string name="back_to_lessons">Dərslərə qayıt</string>
+    <string name="introduction">Giriş</string>
+
+
+    <!-- =================================================================================================== -->
+
+
+    <string name="letter">Hərf</string>
+    <string name="initial">Əvvəl</string>
+    <string name="medial">Orta</string>
+    <string name="final_word">Son</string>
+
+    <string name="alif">ا</string>
+    <string name="alif_init">ا</string>
+    <string name="alif_mid">ـا</string>
+    <string name="alif_final">ـا</string>
+
+    <string name="ba">ب</string>
+    <string name="ba_init">بـ</string>
+    <string name="ba_mid">ـبـ</string>
+    <string name="ba_final">ـب</string>
+
+    <string name="ta">ت</string>
+    <string name="ta_init">تـ</string>
+    <string name="ta_mid">ـتـ</string>
+    <string name="ta_final">ـت</string>
+
+    <string name="tsa">ث</string>
+    <string name="tsa_init">ثـ</string>
+    <string name="tsa_mid">ـثـ</string>
+    <string name="tsa_final">ـث</string>
+
+    <string name="cim">ج</string>
+    <string name="cim_init">جـ</string>
+    <string name="cim_mid">ـجـ</string>
+    <string name="cim_final">ـج</string>
+
+    <string name="hha">ح</string>
+    <string name="hha_init">حـ</string>
+    <string name="hha_mid">ـحـ</string>
+    <string name="hha_final">ـح</string>
+
+    <string name="kha">خ</string>
+    <string name="kha_init">خـ</string>
+    <string name="kha_mid">ـخـ</string>
+    <string name="kha_final">ـخ</string>
+
+    <string name="dal">د</string>
+    <string name="dal_init">د</string>
+    <string name="dal_mid">ـد</string>
+    <string name="dal_final">ـد</string>
+
+    <string name="zal">ذ</string>
+    <string name="zal_init">ذ</string>
+    <string name="zal_mid">ـذ</string>
+    <string name="zal_final">ـذ</string>
+
+
+    <string name="ra">ر</string>
+    <string name="ra_init">ر</string>
+    <string name="ra_mid">ـر</string>
+    <string name="ra_final">ـر</string>
+
+    <string name="zayn">ز</string>
+    <string name="zayn_init">ز</string>
+    <string name="zayn_mid">ـز</string>
+    <string name="zayn_final">ـز</string>
+
+    <string name="sin">س</string>
+    <string name="sin_init">سـ</string>
+    <string name="sin_mid">ـسـ</string>
+    <string name="sin_final">ـس</string>
+
+    <string name="shin">ش</string>
+    <string name="shin_init">شـ</string>
+    <string name="shin_mid">ـشـ</string>
+    <string name="shin_final">ـش</string>
+
+    <string name="sad">ص</string>
+    <string name="sad_init">صـ</string>
+    <string name="sad_mid">ـصـ</string>
+    <string name="sad_final">ـص</string>
+
+    <string name="dad">ض</string>
+    <string name="dad_init">ضـ</string>
+    <string name="dad_mid">ـضـ</string>
+    <string name="dad_final">ـض</string>
+
+    <string name="tda">ط</string>
+    <string name="tda_init">طـ</string>
+    <string name="tda_mid">ـطـ</string>
+    <string name="tda_final">ـط</string>
+
+    <string name="tha">ظ</string>
+    <string name="tha_init">ظـ</string>
+    <string name="tha_mid">ـظـ</string>
+    <string name="tha_final">ـظ</string>
+
+    <string name="ayn">ع</string>
+    <string name="ayn_init">عـ</string>
+    <string name="ayn_mid">ـعـ</string>
+    <string name="ayn_final">ـع</string>
+
+    <string name="ghayn">غ</string>
+    <string name="ghayn_init">غـ</string>
+    <string name="ghayn_mid">ـغـ</string>
+    <string name="ghayn_final">ـغ</string>
+
+    <string name="fa">ف</string>
+    <string name="fa_init">فـ</string>
+    <string name="fa_mid">ـفـ</string>
+    <string name="fa_final">ـف</string>
+
+    <string name="qaf">ق</string>
+    <string name="qaf_init">قـ</string>
+    <string name="qaf_mid">ـقـ</string>
+    <string name="qaf_final">ـق</string>
+
+    <string name="kaf">ك</string>
+    <string name="kaf_init">كـ</string>
+    <string name="kaf_mid">ـكـ</string>
+    <string name="kaf_final">ـك</string>
+
+    <string name="lam">ل</string>
+    <string name="lam_init">لـ</string>
+    <string name="lam_mid">ـلـ</string>
+    <string name="lam_final">ـل</string>
+
+    <string name="mimm">م</string>
+    <string name="mimm_init">مـ</string>
+    <string name="mimm_mid">ـمـ</string>
+    <string name="mimm_final">ـم</string>
+
+
+    <string name="nun">ن</string>
+    <string name="nun_init">نـ</string>
+    <string name="nun_mid">ـنـ</string>
+    <string name="nun_final">ـن</string>
+
+    <string name="ha">ه</string>
+    <string name="ha_init">هـ</string>
+    <string name="ha_mid">ـهـ</string>
+    <string name="ha_final">ـه</string>
+
+    <string name="vav">و</string>
+    <string name="vav_init">و</string>
+    <string name="vav_mid">ـو</string>
+    <string name="vav_final">ـو</string>
+
+    <string name="ya">ي</string>
+    <string name="ya_init">يـ</string>
+    <string name="ya_mid">ـيـ</string>
+    <string name="ya_final">ـي</string>
+
+
+    <!-- =================================================================================================== -->
+
+
+
+
+
+
+    <string name="about_author">
+        Bəxtiyar Turabov
+Sahibkar və Ərəb dili müəllimi
+Bəxtiyar Turabov Misirdə “Al-Azhar” universitetində təhsil almış və bu gün “GULF” Təlim və Tədris mərkəzində ərəb dili üzrə yüksək təcrübəli müəllim kimi fəaliyyət göstərir.
+    </string>
+
+      <string name="about_app">
+        Bu proqram quran oxumağı öyrənmək istəyənlər üçün nəzərdə tutulmuşdur.
+      </string>
+
+     <string name="ab_introduction">
+&#160;&#160;&#160;Həmd və səna olsun bütün kainatın və aləmlərin Rəbbi olan Allaha. Salat və salam Onun Rəsulu və sevimlisi Muhəmmədə (sallallahu aleyhi və səlləm), eləcə də Rəsulullahın ailəsinə, yaxınlarına, səhabələrinə və Qiyamətə qədər onlara gözəl bir şəkildə tabe olanların üzərinə olsun. Amin!
+&#160;&#160;&#160;Möhtərəm müsəlmanlar, ümid edirik ki, sizə təqdim etdiyimiz bu kitabça Allahın izni ilə sizə qısa bir müddətdə müqəddəs kitabımızı ərəb dilində təcvid ehkamlarına riayət edərək oxumaqda vasitəçi olacaq.
+ &#160;&#160;&#160;Müqəddəs kitabımızı ərəb dilində oxumaq istəyən oxucuları bir sual daha çox maraqlandırır. Məgər ərəb dilinin 28 hərfini öyrənərək Qurani-Kərimi oxumaq olmazmı? Təbii ki, olar. Lakin, Uca Rəbbimiz öz Peyğəmbərinə xitab edərək belə buyurmuşdur:&lt;br/&gt;
+ &lt;br/&gt;
+ &lt;i&gt;&#160;&#160;&#160;“Quranı aramla oxu!” (Muzzəmmil, 4)&lt;/i&gt; &lt;br/&gt;
+ &lt;br/&gt;
+ &#160;&#160;&#160;Həmçinin Allah Rəsulu (sallallahu aleyhi və səlləm) imam Buxarinin və Muslimin rəvayət etdiyi hədisdə belə buyurur:&lt;br/&gt;
+ &lt;br/&gt;
+&lt;i&gt;  &#160;&#160;&#160;“Quranı mahir şəkildə oxuyan (yəni, hərflərin haqqını verən və təcvid ehkamlarına əməl edən) mələklərin misalındadır.” (əl-Buxari, Muslim)&lt;/i&gt; &lt;br/&gt;
+&lt;br/&gt;
+ &#160;&#160;&#160;Biz də QURANOXU.az kollektivi olaraq Quranı düzgün və mahir şəkildə oxumanızı asanlaşdırmaq məqsədi ilə bu kitabçanı hazırlayıb sizlərə təqdim edirik.
+ &#160;&#160;&#160;Qəlblər vəhylə inşa olunar. İçərisində Qurandan heç bir şey olmayan qəlbin misalı xaraba ev misalındadır. Çalışın, qəlblərinizi xarabalığa çevirməyin və onu Quranla nurlandırın. Su torpağı dirildib canlandırdığı kimi, Quran da qəlblərə həyat verir və onu ölməyə qoymur.
+ &#160;&#160;&#160;Bəşəriyyətə rəhmət olaraq göndərilən Allah Rəsulunun (sallallahu aleyhi və səlləm) nəsihətlərini sizlərə xatırlatmaq istəyirik:&lt;br/&gt;
+&lt;br/&gt;
+ &lt;i&gt; &#160;&#160;&#160;“Quranı oxuyun! Çünki Quran Qiyamət günü onu oxuyanlara şəfaətçi olaraq gələcəkdir.” (Muslim)&lt;/i&gt; &lt;br/&gt;
+ &lt;br/&gt;
+&lt;i&gt; &#160;&#160;&#160;“Kim Allahın kitabından bir hərf oxuyarsa onun üçün on savab vardır.” (ət-Tirmizi)&lt;/i&gt; &lt;br/&gt;
+&lt;br/&gt;
+ &#160;&#160;&#160;Allah Rəsulunun (sallallahu aleyhi və səlləm) bir hədisində belə deyilir:&lt;br/&gt;
+&lt;br/&gt;
+ &lt;i&gt; &#160;&#160;&#160;“Asanlaşdırın, çətinləşdirməyin...” (əl-Buxari, Muslim)&lt;/i&gt; &lt;br/&gt;
+&lt;br/&gt;
+ &#160;&#160;&#160;Biz də bu hədisdən yola çıxaraq sizlər üçün müxtəsər variantda bu kitabçanı və multimedia diskini virtual təcvid müəllimi olaraq ixtiyarınıza veririk.
+ &#160;&#160;&#160;Heç bir şəriki və bənzəri olmayan uca Rəbbimizə dua edərək diləyirik ki, təcvid elmini öyrənmək istəyən mömin və möminələr üçün bu faydalı vasitəni xeyirli, həm də bərəkətli etsin. Amin!
+&#160;&#160;&#160; Allah pak və nöqsansızdır. Biz şəhadət edirik ki, Ondan başqa ibadətə layiq olan heç bir məbud yoxdur və Muhəmməd (sallallahu aleyhi və səlləm) Onun qulu və rəsuludur!&lt;br/&gt;
+&lt;br/&gt;
+&lt;p align="right"&gt;
+ &lt;b&gt;Bəxtiyar Turabov&lt;/b&gt;&lt;br/&gt;
+ &lt;i&gt; Misir, əl-Əzhar Universitetinin şəriət fakultəsinin məzunu 7 aprel 2014&lt;/i&gt; &lt;br/&gt;
+ &lt;/p&gt;
+ &lt;br/&gt;
+ &lt;font size="2"&gt;&lt;b&gt;&lt;u&gt;Diqqət!&lt;/u&gt; Aşağıdakı dərsləri daha mükəmməl qavramaq və aydın başa düşmək, eyni zamanda doğru tətbiq etmək üçün əlinizdə olan multimedia diskindəki video mühazirələri dinləməniz vacibdir.&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;
+    </string>
+
+
+</resources>

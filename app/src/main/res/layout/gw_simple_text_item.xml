@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ab_test_grid_view_relative_layout_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:background="@color/fragmentBackground"
+    tools:context="az.gulf.learnquran.fragment.ABContentsTestFragment">
+
+    <az.gulf.learnquran.components.ArabicTextView
+        android:id="@+id/ab_test_grid_view_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_corner"
+        android:textColorHighlight="#FF000000"
+        android:textSize="70sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:id="@+id/ab_test_grid_view_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_play_arrow_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/ab_test_grid_view_item_text"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:tint="@color/colorAccent"
+        />
+
+    <TextView android:id="@+id/ab_test_grid_view_item_text_answer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"/>
+
+
+</RelativeLayout >

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <az.gulf.learnquran.components.ArabicTextView
+        android:id="@+id/ab_cont_practice_viewPager_text"
+        style="@android:style/TextAppearance.Large"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="150sp"
+        android:text="T"
+        android:textColor="@color/black" />
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:src="@android:drawable/ic_delete" />-->
+
+    <!--<TextView-->
+        <!--style="@android:style/TextAppearance.Medium"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:id="@+id/bottomText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Bottom Text" />-->
+
+</RelativeLayout>

@@ -1,0 +1,2284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBackground"
+    tools:context="az.gulf.learnquran.fragment.ABContentsHeaderTheoryFragment">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_cont_head_theory_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ab_cont_head_theory_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/ab_cont_head_theory_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab_cont_head_theory_app_bar_layout"
+        android:fillViewport="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/ab_cont_head_theory_alphabet_head_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ab_cont_header_name"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+            <az.gulf.learnquran.components.MyGridView
+                android:id="@+id/ab_cont_head_theory_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:columnWidth="100dp"
+                android:drawSelectorOnTop="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:rotationY="180"/>
+
+            <View
+            android:layout_height="2dip"
+            android:layout_width="match_parent"
+            android:background="#FF212121"
+            android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+
+                android:id="@+id/ab_cont_head_theory_image_header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ab_cont_writings_header_name"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/ab_cont_head_theory_alphabet_image_wth_positions"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/ab_cont_theory_letters_with_positions" />-->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:minHeight="70dp"
+                    android:tag="sticky">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/final_word"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/medial"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/initial"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/letter"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/alif_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/alif_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/alif_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/alif"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ba_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ba_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ba_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ba"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ta_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ta_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ta_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ta"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tsa_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tsa_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tsa_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tsa"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/cim_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/cim_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/cim_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/cim"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/hha_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/hha_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/hha_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/hha"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kha_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kha_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kha_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kha"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dal_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dal_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dal_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dal"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zal_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zal_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zal_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zal"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ra_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ra_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ra_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ra"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zayn_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zayn_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zayn_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/zayn"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sin_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sin_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sin_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sin"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/shin_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/shin_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/shin_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/shin"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sad_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sad_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sad_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/sad"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dad_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dad_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dad_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/dad"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tda_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tda_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tda_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tda"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tha_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tha_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tha_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/tha"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ayn_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ayn_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ayn_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ayn"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ghayn_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ghayn_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ghayn_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ghayn"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/fa_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/fa_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/fa_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/fa"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/qaf_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/qaf_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/qaf_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/qaf"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kaf_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kaf_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kaf_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/kaf"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/lam_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/lam_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/lam_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/lam"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/mimm_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/mimm_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/mimm_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/mimm"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/nun_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/nun_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/nun_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/nun"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ha_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ha_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ha_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ha"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/vav_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/vav_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/vav_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/vav"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--=================================================================-->
+
+                <TableRow android:minHeight="70dp">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:background="@color/black"
+                        android:orientation="horizontal">
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ya_final"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ya_mid"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ya_init"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                        <az.gulf.learnquran.components.ArabicTextView
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/fragmentBackground"
+                            android:gravity="center"
+                            android:padding="1dip"
+                            android:text="@string/ya"
+                            android:textColor="@color/black"
+                            android:textSize="50sp" />
+
+
+                    </LinearLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

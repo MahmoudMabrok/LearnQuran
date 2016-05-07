@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="az.gulf.learnquran.fragment.ABContentsPractiseFragment">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/ab_cont_practice_layout_top"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="100%">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/ab_cont_practice_app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/ab_cont_practice_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.AppBarLayout>
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/ab_cont_practice_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ab_cont_practice_app_bar_layout" />
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/ab_cont_practice_layout_sub"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/ab_cont_practice_layout_top"
+            android:background="@color/colorPrimary"
+            app:layout_heightPercent="30%"
+            app:layout_widthPercent="100%">
+
+
+
+
+            <TextView android:id="@+id/ab_cont_practice_text_alphabet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="20%"
+                app:layout_widthPercent="100%"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@color/colorPrimary"
+                android:textColorHighlight="#000000"
+                android:textIsSelectable="true" />
+
+
+            <ImageButton
+                android:id="@+id/ab_cont_practice_button_circle_play"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="20%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:src="@drawable/circle_play_button"
+                android:scaleType="centerCrop"
+                android:padding="13dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/ab_cont_practice_button_circle_alphabet"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="20%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:layout_toRightOf="@id/ab_cont_practice_button_circle_play"
+                android:src="@drawable/circle_letter_button"
+                android:scaleType="centerCrop"
+                android:padding="13dp"
+                android:background="@android:color/transparent"/>
+
+
+            <android.support.v4.widget.Space
+                android:id="@+id/ab_cont_practice_space"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="20%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:layout_toRightOf="@id/ab_cont_practice_button_circle_alphabet" />
+
+
+            <ImageButton
+                android:id="@+id/ab_cont_practice_button_circle_play_record"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="20%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:src="@drawable/circle_play_record_button"
+                android:layout_toRightOf="@id/ab_cont_practice_space"
+                android:scaleType="centerCrop"
+                android:padding="13dp"
+                android:background="@android:color/transparent"/>
+
+
+            <ImageButton
+                android:id="@+id/ab_cont_practice_button_circle_record"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="20%"
+                android:layout_below="@id/ab_cont_practice_text_alphabet"
+                android:layout_toRightOf="@id/ab_cont_practice_button_circle_play_record"
+                android:src="@drawable/circle_record_button"
+                android:scaleType="centerCrop"
+                android:padding="13dp"
+                android:background="@android:color/transparent"/>
+
+
+
+
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="100%"
+                android:layout_below="@id/ab_cont_practice_button_circle_alphabet"
+                android:orientation="horizontal" >
+
+
+                <ImageButton android:id="@+id/ab_cont_practice_button_previous"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_keyboard_arrow_left_24dp"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:padding="15dp"/>
+
+                <Spinner
+                android:id="@+id/ab_cont_practice_button_spinner"
+                style="?android:attr/buttonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:prompt="@string/app_name"
+                android:spinnerMode="dialog"
+                android:ellipsize="marquee"
+                android:theme="@android:style/Theme.Holo.Light"/>
+
+                <ImageButton android:id="@+id/ab_cont_practice_button_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:padding="15dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+    </android.support.percent.PercentRelativeLayout>
